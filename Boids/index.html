@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Boids</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/addons/p5.sound.min.js"></script>
+	<script src="./space_subdiv.js"></script>
+
+	<style>
+		html,
+		body {
+			background-color: #333;
+			color: #eee;
+			margin: 10px;
+
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		canvas {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		.slider,
+		.sliderValue {
+			vertical-align: -2px;
+		}
+
+		.sliderValue {
+			overflow: hidden;
+			display: inline-block;
+			margin-left: 4px;
+			text-align: center;
+			width: 30px;
+			background: #222;
+			border-radius: 3px;
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		.sliderLabel,
+		.checkbox {
+			margin: 0 8px 0 0;
+			display: inline-block;
+		}
+
+		.sliderValue,
+		.checkbox {
+			margin-right: 20px;
+		}
+
+		.checkbox input {
+			margin-right: 8px;
+		}
+
+		.agent {
+			margin-top: 10px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<script src="./agent.js"></script>
+	<script src="./index.js"></script>
+
+</body>
+
+</html>
